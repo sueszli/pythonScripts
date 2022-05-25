@@ -1,7 +1,7 @@
 import os
 import webbrowser
 
-# This script opens up all pdf's in the current directory and in all subdirectories (in your browser)
+# Open up all pdfs in all subdirectories (in your default browser) 
 
 path ="./"
 
