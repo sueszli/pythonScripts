@@ -1,10 +1,8 @@
 import os
 import webbrowser
 
-# Open up all pdfs in all subdirectories (in your default browser) 
-
+# get paths to all pdfs in current directory and subdirectories
 path ="./"
-
 filePaths = []
 for root, dirs, files in os.walk(path):
 	for file in files:
@@ -13,5 +11,6 @@ for root, dirs, files in os.walk(path):
 # filter list by elements that end with .pdf
 pdfsList = [name for name in filePaths if name.endswith(".pdf")]
 
+# open all pdfs in default browser
 for pdf in pdfsList:
 	webbrowser.open_new_tab(pdf)
